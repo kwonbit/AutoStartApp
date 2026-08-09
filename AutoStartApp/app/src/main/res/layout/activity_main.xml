@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="부팅 후 자동 실행할 앱 설정"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editTextPackageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="패키지명 입력 (예: com.google.android.youtube)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설정 저장"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다른 앱 위에 표시 권한 허용하기" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="주의: 안드로이드 10 이상에서는 '다른 앱 위에 표시' 권한이 있어야 백그라운드에서 앱을 실행할 수 있습니다."
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+</LinearLayout>
